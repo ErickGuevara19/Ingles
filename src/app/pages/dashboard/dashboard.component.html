@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido a nuestra página de diseño de moda</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../dashboard/dashboard.component.css">
+</head>
+<body>
+  <header class="bg-dark text-white text-center py-5">
+    <h1>Welcome to our Fashion Career page</h1>
+    <p>
+      Explore our latest collections and information for you to be a designer</p>
+  </header>
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>
+            About us</h2>
+          <p>
+            We are the fashion design career committed to quality and creativity. Our team of designers work hard to bring you the latest trends and unique garments.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="../assets/img/Diseño-sin-título-17.jpg"  class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2>
+        Our Collections</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../assets/img/coleccion1.png" class="card-img-top" >
+            <div class="card-body">
+              <h5 class="card-title">Colecction Panama Canal.</h5>
+              <p class="card-text">
+                Discover our new inspired by the Panama Canal.</p>
+              <a [routerLink]="[ 'colleccion']" class="btn btn-primary">Saber más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../assets/img/collecion2.jpg" class="card-img-top" alt="Colección 2">
+            <div class="card-body">
+              <h5 class="card-title">
+                Collection 2</h5>
+              <p class="card-text">Get inspired by our exclusive designs for special occasions.</p>
+              <a [routerLink]="[ 'colleccion']" class="btn btn-primary">Saber más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../assets/img/coleccion3.jpeg" class="card-img-top" alt="Colección 3">
+            <div class="card-body">
+              <h5 class="card-title">
+                Collection 3</h5>
+              <p class="card-text">Get inspired by our exclusive designs for special occasions.</p>
+              <a  [routerLink]="[ 'colleccion']" class="btn btn-primary">Saber más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>All rights reserved by Carrera De Software &copy; 2023 | Fashion design</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
