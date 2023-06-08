@@ -5,12 +5,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { Coleccion1Component } from './coleccion1/coleccion1.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
+
 const routes: Routes = [
   {
     path: 'dashboard', component: PagesComponent,
     children: [
       {path:'', component: DashboardComponent},
-      {path: 'colleccion', component: Coleccion1Component}
+      {path: 'colleccion', component: Coleccion1Component},
+
     ]
   }
 

@@ -13,10 +13,10 @@ export class Coleccion1Component {
 
   videoUrl1!: SafeResourceUrl;
   ngOnInit() {
-    const videoPath = 'assets/video/video.mp4'; // Ruta relativa al video dentro de la carpeta "assets"
+    const videoPath = '../../../assets/video/woman.mp4'; // Ruta relativa al video dentro de la carpeta "assets"
     this.videoUrl1 = this.sanitizer.bypassSecurityTrustResourceUrl(videoPath);
 
-    const videoPath2= 'assets/video/video.mp4';
+    const videoPath2= '../../../assets/video/man.mp4';
     this.videoUrl2=this.sanitizer.bypassSecurityTrustResourceUrl(videoPath2);
   }
 
