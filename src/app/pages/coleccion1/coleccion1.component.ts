@@ -9,10 +9,15 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class Coleccion1Component {
   constructor(private sanitizer: DomSanitizer) {}
 
-  videoUrl!: SafeResourceUrl; 
+  videoUrl2!:SafeResourceUrl;
+
+  videoUrl1!: SafeResourceUrl;
   ngOnInit() {
     const videoPath = 'assets/video/video.mp4'; // Ruta relativa al video dentro de la carpeta "assets"
-    this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(videoPath);
+    this.videoUrl1 = this.sanitizer.bypassSecurityTrustResourceUrl(videoPath);
+
+    const videoPath2= 'assets/video/video.mp4';
+    this.videoUrl2=this.sanitizer.bypassSecurityTrustResourceUrl(videoPath2);
   }
 
 }
